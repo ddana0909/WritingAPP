@@ -1,0 +1,58 @@
+body {
+    font-family: sans-serif;
+
+    background: #DCE9E9;
+    -moz-transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+
+
+h1 {
+    font-size: 400%;
+    margin-top: 30px;
+
+}
+
+.output {
+    background: rgb(255, 245, 211);
+}
+
+#output {
+    padding: 20px;
+    padding-bottom: 0;
+    text-align: center;
+    min-height: 80px;
+    -moz-transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+h3 {
+    text-align: center;
+    font-style: italic;
+}
+
+.buttons {
+    position: absolute;
+    margin-left: -60px;
+    margin-top: -250px;
+}
+#demo {
+    box-shadow: 0 0 35px rgba(0,0,0,0.2);
+
+}
+#timing {
+     font-size: x-small;
+ }
+hr {
+    border: none;
+}
+.buttons #clear { color: red; font-size: 400%; font-weight: bold; cursor: pointer;}
+.buttons #word { color: blue; font-size: 300%; font-weight: bold; cursor: pointer; margin-left: -2px;}
