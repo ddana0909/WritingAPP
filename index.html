@@ -7,28 +7,25 @@
         <LINK href="Boostrap/css/bootstrap.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-		<div class=container id="main">
-			<div class="col-md-4">
-                <image></image>
+		<div class="row" id="main">
+            <div id="image" class="col-sm-4 text-center">
+
 			</div>
-            <div id="demo" class="col-md-8">
+            <div id="demo" class="col-sm-7">
                 <div id="textModel">
 
                 </div>
-				<canvas id='c' class="" width="600" height="300"></canvas>
-                <div class="output">
-                    <div id="output">
-                        <div id="text"></div>
-                    </div>
-                </div>
-				<div class="buttons">
-					<div id="clear" onclick="reset_canvas()">&times;</div>
-					<div id="word" onclick="getWord()">&#8635;</div>
+				<canvas id='c'></canvas>
+
+				<div class="row">
+                    <div class="col-sm-offset-5 col-sm-1" id="clear" onclick="reset_canvas()">&times;</div>
+                    <div class="col-sm-1" id="verify" onclick="verify()">&#10003;</div>
+                    <div  class="col-sm-1" id="word" onclick="getWord()">&#8635;</div>
+
 				</div>
 			</div>
 		</div>
-        <button onclick="verify()">verify</button>
-		<script src="ocrad.js"></script>
+        <script src="ocrad.js"></script>
         <script src="writingApp.js"></script>
 	</body>
 </html>
