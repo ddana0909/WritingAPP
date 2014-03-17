@@ -1,31 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Writing</title>
-		<meta charset="utf8">
-        <LINK href="style.css" rel="stylesheet" type="text/css">
-        <LINK href="Boostrap/css/bootstrap.css" rel="stylesheet" type="text/css">
-	</head>
-	<body>
-		<div class="row" id="main">
+<head>
+    <title>FunWriting</title>
+    <LINK href="style.css" rel="stylesheet" type="text/css">
+    <LINK href="Boostrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <section id="menu">
+            <div class="row">
+
+                <div id="dog" class="col-sm-4 text-center">
+
+                </div>
+                <div id="fruits" class="col-sm-8 text-center" onclick="startGame('fruits')">
+
+                </div>
+            </div>
+            <div class="row">
+                 <div id="vegetables" class="col-sm-4 text-center" onclick="startGame('vegetables')">
+
+                </div>
+                <div id="animals" class="col-sm-8 text-center" onclick="startGame('animals')">
+
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <section id="game" hidden="true">
+        <div class="row" id="main">
             <div id="image" class="col-sm-4 text-center">
 
-			</div>
+            </div>
             <div id="demo" class="col-sm-7">
                 <div id="textModel">
 
                 </div>
-				<canvas id='c'></canvas>
+                <canvas id='c'></canvas>
 
-				<div class="row">
+                <div class="row">
                     <div class="col-sm-offset-5 col-sm-1" id="clear" onclick="reset_canvas()">&times;</div>
                     <div class="col-sm-1" id="verify" onclick="verify()">&#10003;</div>
                     <div  class="col-sm-1" id="word" onclick="getWord()">&#8635;</div>
+                </div>
+            </div>
+         </div>
+        <button class="btn btn-lg btn-success" onclick="displayMenu()"><span class="glyphicon glyphicon-arrow-left" /> Back</button>
+    </section>
+</body>
 
-				</div>
-			</div>
-		</div>
-        <script src="ocrad.js"></script>
-        <script src="writingApp.js"></script>
-	</body>
+<script src="ocrad.js"></script>
+<!-- JS dependencies for bootbox-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="Boostrap/js/bootstrap.min.js"></script>
+
+<script src="bootbox.js"></script>
+<script src="writingApp.js"></script>
 </html>

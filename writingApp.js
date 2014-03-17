@@ -5,10 +5,14 @@ var inputWord;
 var drag = false, lastX, lastY;
 var lastWorker;
 var worker;
-window.onload=startGame;
-window.onresize=startGame();
-function startGame()
+window.onload=displayMenu();
+window.onresize=displayMenu();
+function startGame(Objtype)
 {
+    //make other section invisible
+    document.getElementById('menu').style.display='none';
+    document.getElementById('game').style.display='block';
+
     c = document.getElementById('c');
     o = c.getContext('2d');
     c.width= document.getElementById('demo').offsetWidth;
@@ -17,7 +21,7 @@ function startGame()
     initMouse(c);
     worker= new Worker('worker.js');
     reset_canvas();
-    initGameObjects();
+    initGameObjects(Objtype);
     getWord();
 }
 
@@ -127,8 +131,11 @@ function runOCR(image_data, raw_feed)
 }
 
 function getWord()
-{   var random=Math.floor((Math.random()*10)+1);
+{
+    reset_canvas();
+    var random=Math.floor((Math.random()*10)+1);
     wordToWrite=gameObjects[random].ObjectName;
+    show_image(gameObjects[random], 'image');
     if('innerText' in document.getElementById("textModel"))
     {
         document.getElementById("textModel").innerText = wordToWrite;
@@ -137,7 +144,7 @@ function getWord()
     {
         document.getElementById("textModel").textContent = wordToWrite;
     }
-    show_image(gameObjects[random], 'image');
+
 }
 
 function GameObject(imagePath,name)
@@ -147,28 +154,78 @@ function GameObject(imagePath,name)
 
 }
 
-function initGameObjects()
-{
-    var obj= new GameObject("Images/Apple.png",'APPLE');
-    gameObjects.push(obj);
-    obj= new GameObject("Images/Pear.png",'PEAR');
-    gameObjects.push(obj);
-    obj= new GameObject("Images/Cherry.png",'CHERRY');
-    gameObjects.push(obj);
-    obj= new GameObject("Images/Grapes.png",'GRAPE');
-    gameObjects.push(obj);
-    obj= new GameObject("Images/Kiwi.png",'KIWI');
-    gameObjects.push(obj);
-    obj= new GameObject("Images/Lemon.png",'LEMON');
-    gameObjects.push(obj);
-    obj= new GameObject("Images/Peach.png",'PEACH');
-    gameObjects.push(obj);
-    obj= new GameObject("Images/Plum.png",'PLUM');
-    gameObjects.push(obj);
-    obj= new GameObject("Images/Orange.png",'ORANGE');
-    gameObjects.push(obj);
-    obj= new GameObject("Images/Melon.png",'MELON');
-    gameObjects.push(obj);
+function initGameObjects(objType)
+{  gameObjects=[];
+   if(objType=="fruits")
+   {
+        var obj= new GameObject("Images/Fruits/Apple.png",'APPLE');
+        gameObjects.push(obj);
+        obj= new GameObject("Images/Fruits/Pear.png",'PEAR');
+        gameObjects.push(obj);
+        obj= new GameObject("Images/Fruits/Cherry.png",'CHERRY');
+        gameObjects.push(obj);
+        obj= new GameObject("Images/Fruits/Grapes.png",'GRAPE');
+        gameObjects.push(obj);
+        obj= new GameObject("Images/Fruits/Kiwi.png",'KIWI');
+        gameObjects.push(obj);
+        obj= new GameObject("Images/Fruits/Lemon.png",'LEMON');
+        gameObjects.push(obj);
+        obj= new GameObject("Images/Fruits/Peach.png",'PEACH');
+        gameObjects.push(obj);
+        obj= new GameObject("Images/Fruits/Plum.png",'PLUM');
+        gameObjects.push(obj);
+        obj= new GameObject("Images/Fruits/Orange.png",'ORANGE');
+        gameObjects.push(obj);
+        obj= new GameObject("Images/Fruits/Melon.png",'MELON');
+        gameObjects.push(obj);
+   }
+    if(objType=="vegetables")
+    {
+        var obj= new GameObject("Images/Vegetables/Cabbage.png",'CABBAGE');
+        gameObjects.push(obj);
+        obj= new GameObject("Images/Vegetables/Carrot.png",'CARROT');
+        gameObjects.push(obj);
+        obj= new GameObject("Images/Vegetables/Garlic.png",'GARLIC');
+        gameObjects.push(obj);
+        obj= new GameObject("Images/Vegetables/Lettuce.png",'LETTUCE');
+        gameObjects.push(obj);
+        obj= new GameObject("Images/Vegetables/Onion.png",'ONION');
+        gameObjects.push(obj);
+        obj= new GameObject("Images/Vegetables/Pepper.png",'PEPPER');
+        gameObjects.push(obj);
+        obj= new GameObject("Images/Vegetables/Potato.png",'POTATO');
+        gameObjects.push(obj);
+        obj= new GameObject("Images/Vegetables/Radish.png",'RADISH');
+        gameObjects.push(obj);
+        obj= new GameObject("Images/Vegetables/Spinach.png",'SPINACH');
+        gameObjects.push(obj);
+        obj= new GameObject("Images/Vegetables/Tomato.png",'TOMATO');
+        gameObjects.push(obj);
+    }
+    if(objType=="animals")
+    {
+        var obj= new GameObject("Images/Animals/Bunny.jpg",'BUNNY');
+        gameObjects.push(obj);
+        obj= new GameObject("Images/Animals/Cat.jpg",'CAT');
+        gameObjects.push(obj);
+        obj= new GameObject("Images/Animals/Cow.jpg",'COW');
+        gameObjects.push(obj);
+        obj= new GameObject("Images/Animals/Dog.jpg",'DOG');
+        gameObjects.push(obj);
+        obj= new GameObject("Images/Animals/Duck.jpg",'DUCK');
+        gameObjects.push(obj);
+        obj= new GameObject("Images/Animals/Goat.jpg",'GOAT');
+        gameObjects.push(obj);
+        obj= new GameObject("Images/Animals/Horse.jpg",'HORSE');
+        gameObjects.push(obj);
+        obj= new GameObject("Images/Animals/Lamb.jpg",'LAMB');
+        gameObjects.push(obj);
+        obj= new GameObject("Images/Animals/Sheep.jpg",'SHEEP');
+        gameObjects.push(obj);
+        obj= new GameObject("Images/Animals/Hen.jpg",'HEN');
+        gameObjects.push(obj);
+    }
+
 }
 
 function show_image(obj, divId) {
@@ -179,7 +236,7 @@ function show_image(obj, divId) {
         var div=document.getElementById(divId);
         div.style.height=document.getElementById('demo').offsetHeight+"px";
         div.style.backgroundImage="url("+this.src+")";
-        div.style.backgroundSize="70% auto";
+        div.style.backgroundSize="80% auto";
         div.style.backgroundRepeat="no-repeat";
         div.style.backgroundPosition="center center";
     };
@@ -196,7 +253,59 @@ function verify()
 {   inputWord=inputWord.substring(0,inputWord.length-1).toUpperCase();
     inputWord = inputWord.replace(/\s+/g, " ");
     if(wordToWrite.localeCompare(inputWord)!=0)
-        alert(wordToWrite.toString()+"wrong"+inputWord.toString());
+
+        bootbox.dialog({
+            message: inputWord.toString()+
+                "<div class='text-center'><br/><img src='Images/sad.gif~c200'/></div>",
+            title: "<b>You got it wrong</b>",
+            className:"text-center",
+            onEscape: function() {
+                reset_canvas();
+            },
+            buttons:
+            {
+                retry:
+                {
+                    label: "&#8635;Retry ",
+                    className: "btn btn-lg btn-info",
+                    callback: function() {
+                        reset_canvas();
+                    }
+
+                }
+            }
+        });
+
+        //alert(wordToWrite.toString()+"wrong"+inputWord.toString());
     else
-        alert("good");
+       getWord();
+}
+
+function displayImg(src,elem)
+{
+    var image1 = new Image();
+    image1.src = src;
+    image1.onload = function () {
+        var div = document.getElementById(elem);
+        div.style.height = 0.95*window.innerHeight / 2 + "px";
+        div.style.backgroundImage = "url(" + this.src + ")";
+        if(elem=="dog"||elem=="vegetables")
+            div.style.backgroundSize = "50% auto";
+        else
+            div.style.backgroundSize = "60% auto";
+        div.style.backgroundRepeat = "no-repeat";
+        if(elem=="dog"||elem=="vegetables")
+            div.style.backgroundPosition = "right center ";
+        else
+            div.style.backgroundPosition = "center center";
+    };
+}
+function displayMenu()
+{
+    document.getElementById('menu').style.display='block';
+    document.getElementById('game').style.display='none';
+    displayImg("Images/Dog.gif", "dog");
+    displayImg("Images/Animals.png", "animals");
+    displayImg("Images/Fruits.png", "fruits");
+    displayImg("Images/Vegetables.png", "vegetables");
 }

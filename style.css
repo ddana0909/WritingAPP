@@ -1,9 +1,29 @@
+/*menu classes*/
+
+#image
+{
+    top:50%;
+    height: 100%;
+    display: table-cell; vertical-align: middle
+}
+#menu
+{
+    background-image:url('Images/backg.jpg');
+    background-color:#cccccc;
+}
+#animals{cursor: pointer;}
+#vegetables{cursor: pointer;}
+#fruits{cursor: pointer;}
+
+
+/*game classes*/
+
 #wrapper {display:table;}
 #cell {display:table-cell; vertical-align:middle;}
-body {
+
+#game {
     font-family: sans-serif;
-    margin-top: 10%;
-    background: #DCE9E9;
+    margin-top: 3%;
     -moz-transition: background-color 0.5s;
     -webkit-transition: background-color 0.5s;
     -o-transition: background-color 0.5s;
@@ -59,12 +79,8 @@ h3 {
 hr {
     border: none;
 }
-#image
-{
-    top:50%;
-    height: 100%;
-    display: table-cell; vertical-align: middle
-}
+
+
 .row #clear { color: red; font-size: 400%; font-weight: bold; cursor: pointer; }
 .row #word { color: blue; font-size: 300%; font-weight: bold; cursor: pointer; }
 .row #verify {color:green;font-size:400%; font-weight: bold; cursor: pointer; }
