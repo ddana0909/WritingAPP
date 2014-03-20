@@ -1,8 +1,10 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>FunWriting</title>
-    <LINK href="style.css" rel="stylesheet" type="text/css">
+    <LINK href="Style/style.css" rel="stylesheet" type="text/css">
+    <link href="Style/toastr.css" rel="stylesheet"/>
     <LINK href="Boostrap/css/bootstrap.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -26,10 +28,9 @@
 
                 </div>
              </div>
-        </div>
     </section>
 
-    <section id="game" hidden="true">
+    <section id="game">
         <div class="row" id="main">
             <div id="image" class="col-sm-4 text-center">
 
@@ -47,15 +48,15 @@
                 </div>
             </div>
          </div>
-        <button class="btn btn-lg btn-success" onclick="displayMenu()"><span class="glyphicon glyphicon-arrow-left" /> Back</button>
+        <button class="btn btn-lg btn-success" onclick="displayMenu()"><span class="glyphicon glyphicon-arrow-left"></span> Back</button>
     </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+    <script src="Boostrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="Scripts/toastr.js" type="text/javascript"></script>
+    <script src="Scripts/ocrad.js" type="text/javascript"></script>
+    <script src="Scripts/bootbox.js" type="text/javascript"></script>
+    <script src="Scripts/buzz.js" type="text/javascript"></script>
+    <script src="Scripts/writingApp.js" type="text/javascript"></script>
 </body>
-
-<script src="ocrad.js"></script>
-<!-- JS dependencies for bootbox-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="Boostrap/js/bootstrap.min.js"></script>
-
-<script src="bootbox.js"></script>
-<script src="writingApp.js"></script>
 </html>

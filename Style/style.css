@@ -8,7 +8,7 @@
 }
 #menu
 {
-    background-image:url('Images/backg.jpg');
+    background-image:url('../Images/backg.jpg');
     background-color:#cccccc;
 }
 #animals{cursor: pointer;}

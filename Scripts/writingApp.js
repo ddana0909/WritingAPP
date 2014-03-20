@@ -133,7 +133,7 @@ function runOCR(image_data, raw_feed)
 function getWord()
 {
     reset_canvas();
-    var random=Math.floor((Math.random()*10)+1);
+    var random=Math.floor((Math.random()*10));
     wordToWrite=gameObjects[random].ObjectName;
     show_image(gameObjects[random], 'image');
     if('innerText' in document.getElementById("textModel"))
@@ -144,89 +144,103 @@ function getWord()
     {
         document.getElementById("textModel").textContent = wordToWrite;
     }
+    gameObjects[random].Sound.play();
 
 }
 
-function GameObject(imagePath,name)
+function GameObject(imagePath,name, sound)
 {
     this.ImagePath=imagePath;
     this.ObjectName=name;
+    this.Sound=sound;
 
+}
+
+function sound(name)
+{
+    return new buzz.sound("Audio/"+name,
+        {
+            formats: [ "ogg", "mp3", "wav" ],
+            preload: true,
+            autoplay: false,
+            loop: false
+        });
 }
 
 function initGameObjects(objType)
 {  gameObjects=[];
    if(objType=="fruits")
    {
-        var obj= new GameObject("Images/Fruits/Apple.png",'APPLE');
+        var obj= new GameObject("Images/Fruits/Apple.png",'APPLE', sound("Fruits/Apple"));
         gameObjects.push(obj);
-        obj= new GameObject("Images/Fruits/Pear.png",'PEAR');
+        obj= new GameObject("Images/Fruits/Pear.png",'PEAR',sound("Fruits/Pear"));
         gameObjects.push(obj);
-        obj= new GameObject("Images/Fruits/Cherry.png",'CHERRY');
+        obj= new GameObject("Images/Fruits/Cherry.png",'CHERRY',sound("Fruits/Cherry"));
         gameObjects.push(obj);
-        obj= new GameObject("Images/Fruits/Grapes.png",'GRAPE');
+        obj= new GameObject("Images/Fruits/Grapes.png",'GRAPES',sound("Fruits/Grapes"));
         gameObjects.push(obj);
-        obj= new GameObject("Images/Fruits/Kiwi.png",'KIWI');
+        obj= new GameObject("Images/Fruits/Kiwi.png",'KIWI',sound("Fruits/Kiwi"));
         gameObjects.push(obj);
-        obj= new GameObject("Images/Fruits/Lemon.png",'LEMON');
+        obj= new GameObject("Images/Fruits/Lemon.png",'LEMON',sound("Fruits/Lemon"));
         gameObjects.push(obj);
-        obj= new GameObject("Images/Fruits/Peach.png",'PEACH');
+        obj= new GameObject("Images/Fruits/Peach.png",'PEACH',sound("Fruits/Peach"));
         gameObjects.push(obj);
-        obj= new GameObject("Images/Fruits/Plum.png",'PLUM');
+        obj= new GameObject("Images/Fruits/Plum.png",'PLUM',sound("Fruits/Plum"));
         gameObjects.push(obj);
-        obj= new GameObject("Images/Fruits/Orange.png",'ORANGE');
+        obj= new GameObject("Images/Fruits/Orange.png",'ORANGE',sound("Fruits/Orange"));
         gameObjects.push(obj);
-        obj= new GameObject("Images/Fruits/Melon.png",'MELON');
+        obj= new GameObject("Images/Fruits/Melon.png",'MELON',sound("Fruits/Melon"));
         gameObjects.push(obj);
    }
     if(objType=="vegetables")
     {
-        var obj= new GameObject("Images/Vegetables/Cabbage.png",'CABBAGE');
+        var obj= new GameObject("Images/Vegetables/Cabbage.png",'CABBAGE',sound("Vegetables/Cabbage"));
         gameObjects.push(obj);
-        obj= new GameObject("Images/Vegetables/Carrot.png",'CARROT');
+        obj= new GameObject("Images/Vegetables/Carrot.png",'CARROT',sound("Vegetables/Carrot"));
         gameObjects.push(obj);
-        obj= new GameObject("Images/Vegetables/Garlic.png",'GARLIC');
+        obj= new GameObject("Images/Vegetables/Garlic.png",'GARLIC',sound("Vegetables/Garlic"));
         gameObjects.push(obj);
-        obj= new GameObject("Images/Vegetables/Lettuce.png",'LETTUCE');
+        obj= new GameObject("Images/Vegetables/Lettuce.png",'LETTUCE',sound("Vegetables/Lettuce"));
         gameObjects.push(obj);
-        obj= new GameObject("Images/Vegetables/Onion.png",'ONION');
+        obj= new GameObject("Images/Vegetables/Onion.png",'ONION',sound("Vegetables/Onion"));
         gameObjects.push(obj);
-        obj= new GameObject("Images/Vegetables/Pepper.png",'PEPPER');
+        obj= new GameObject("Images/Vegetables/Pepper.png",'PEPPER',sound("Vegetables/Pepper"));
         gameObjects.push(obj);
-        obj= new GameObject("Images/Vegetables/Potato.png",'POTATO');
+        obj= new GameObject("Images/Vegetables/Potato.png",'POTATO',sound("Vegetables/Potato"));
         gameObjects.push(obj);
-        obj= new GameObject("Images/Vegetables/Radish.png",'RADISH');
+        obj= new GameObject("Images/Vegetables/Radish.png",'RADISH',sound("Vegetables/Radish"));
         gameObjects.push(obj);
-        obj= new GameObject("Images/Vegetables/Spinach.png",'SPINACH');
+        obj= new GameObject("Images/Vegetables/Spinach.png",'SPINACH',sound("Vegetables/Spinach"));
         gameObjects.push(obj);
-        obj= new GameObject("Images/Vegetables/Tomato.png",'TOMATO');
+        obj= new GameObject("Images/Vegetables/Tomato.png",'TOMATO',sound("Vegetables/Tomato"));
         gameObjects.push(obj);
     }
     if(objType=="animals")
     {
-        var obj= new GameObject("Images/Animals/Bunny.jpg",'BUNNY');
+        var obj= new GameObject("Images/Animals/Bunny.jpg",'BUNNY',sound("Animals/Bunny"));
         gameObjects.push(obj);
-        obj= new GameObject("Images/Animals/Cat.jpg",'CAT');
+        obj= new GameObject("Images/Animals/Cat.jpg",'CAT',sound("Animals/Cat"));
         gameObjects.push(obj);
-        obj= new GameObject("Images/Animals/Cow.jpg",'COW');
+        obj= new GameObject("Images/Animals/Cow.jpg",'COW',sound("Animals/Cow"));
         gameObjects.push(obj);
-        obj= new GameObject("Images/Animals/Dog.jpg",'DOG');
+        obj= new GameObject("Images/Animals/Dog.jpg",'DOG',sound("Animals/Dog"));
         gameObjects.push(obj);
-        obj= new GameObject("Images/Animals/Duck.jpg",'DUCK');
+        obj= new GameObject("Images/Animals/Duck.jpg",'DUCK',sound("Animals/Duck"));
         gameObjects.push(obj);
-        obj= new GameObject("Images/Animals/Goat.jpg",'GOAT');
+        obj= new GameObject("Images/Animals/Goat.jpg",'GOAT',sound("Animals/Goat"));
         gameObjects.push(obj);
-        obj= new GameObject("Images/Animals/Horse.jpg",'HORSE');
+        obj= new GameObject("Images/Animals/Horse.jpg",'HORSE',sound("Animals/Horse"));
         gameObjects.push(obj);
-        obj= new GameObject("Images/Animals/Lamb.jpg",'LAMB');
+        obj= new GameObject("Images/Animals/Lamb.jpg",'LAMB',sound("Animals/Lamb"));
         gameObjects.push(obj);
-        obj= new GameObject("Images/Animals/Sheep.jpg",'SHEEP');
+        obj= new GameObject("Images/Animals/Sheep.jpg",'SHEEP',sound("Animals/Sheep"));
         gameObjects.push(obj);
-        obj= new GameObject("Images/Animals/Hen.jpg",'HEN');
+        obj= new GameObject("Images/Animals/Hen.jpg",'HEN',sound("Animals/Hen"));
         gameObjects.push(obj);
     }
 
 }
+
 
 function show_image(obj, divId) {
     var image1=new Image();
@@ -254,9 +268,9 @@ function verify()
     inputWord = inputWord.replace(/\s+/g, " ");
     if(wordToWrite.localeCompare(inputWord)!=0)
 
-        bootbox.dialog({
+    {  bootbox.dialog({
             message: inputWord.toString()+
-                "<div class='text-center'><br/><img src='Images/sad.gif~c200'/></div>",
+                "<div class='text-center'><br/><img src='../Images/sad.gif~c200'/></div>",
             title: "<b>You got it wrong</b>",
             className:"text-center",
             onEscape: function() {
@@ -275,14 +289,19 @@ function verify()
                 }
             }
         });
-
+      }
         //alert(wordToWrite.toString()+"wrong"+inputWord.toString());
+
     else
-       getWord();
+    {
+        toast();
+        getWord();
+    }
 }
 
 function displayImg(src,elem)
 {
+
     var image1 = new Image();
     image1.src = src;
     image1.onload = function () {
@@ -308,4 +327,31 @@ function displayMenu()
     displayImg("Images/Animals.png", "animals");
     displayImg("Images/Fruits.png", "fruits");
     displayImg("Images/Vegetables.png", "vegetables");
+}
+
+function playSound(word)
+{
+    var audio = new Audio();
+    audio.src ='http://translate.google.com/translate_tts?tl=en&q='+word+'%20';
+    audio.play();
+}
+function toast()
+{
+    toastr.options=
+    {
+        "closeButton": false,
+        "debug": false,
+        "positionClass": "toast-top-right",
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+    };
+    toastr.info("+20 Points","GOOD!");
+
 }
