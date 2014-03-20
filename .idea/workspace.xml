@@ -2,120 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e7c7d9c-126b-47ec-99c0-4d2773de8dce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Apple.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Apple.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Apple.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Animals/Bunny.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Animals/Bunny.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Cabbage.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Cabbage.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Cabbage.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Carrot.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Carrot.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Carrot.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Animals/Cat.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Animals/Cat.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Cherry.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Cherry.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Cherry.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Animals/Cow.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Animals/Cow.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Animals/Dog.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Animals/Dog.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Animals/Duck.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Animals/Duck.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Garlic.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Garlic.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Garlic.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Animals/Goat.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Animals/Goat.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Grapes.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Grapes.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Grapes.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Animals/Hen.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Animals/Hen.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Animals/Horse.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Animals/Horse.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Kiwi.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Kiwi.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Kiwi.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Animals/Lamb.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Animals/Lamb.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Lemon.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Lemon.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Lemon.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Lettuce.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Lettuce.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Lettuce.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Melon.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Melon.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Melon.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Onion.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Onion.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Onion.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Orange.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Orange.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Orange.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Peach.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Peach.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Peach.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Pear.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Pear.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Pear.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Pepper.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Pepper.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Pepper.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Plum.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Plum.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Fruits/Plum.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Potato.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Potato.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Potato.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Radish.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Radish.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Radish.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Animals/Sheep.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Animals/Sheep.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Spinach.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Spinach.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Spinach.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Tomato.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Tomato.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audio/Vegetables/Tomato.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Scripts/buzz.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Scripts/buzz.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Style/toastr.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Scripts/toastr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Images/Animals.png" afterPath="$PROJECT_DIR$/Images/Animals.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Images/Fruits/Apple.png" afterPath="$PROJECT_DIR$/Images/Fruits/Apple.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Images/Vegetables/Cabbage.png" afterPath="$PROJECT_DIR$/Images/Vegetables/Cabbage.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Images/Vegetables/Carrot.png" afterPath="$PROJECT_DIR$/Images/Vegetables/Carrot.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Images/Fruits/Cherry.png" afterPath="$PROJECT_DIR$/Images/Fruits/Cherry.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Images/Fruits.png" afterPath="$PROJECT_DIR$/Images/Fruits.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Images/Vegetables/Garlic.png" afterPath="$PROJECT_DIR$/Images/Vegetables/Garlic.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Images/Fruits/Grapes.png" afterPath="$PROJECT_DIR$/Images/Fruits/Grapes.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Images/Fruits/Kiwi.png" afterPath="$PROJECT_DIR$/Images/Fruits/Kiwi.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Images/LearnToWrite.png" afterPath="$PROJECT_DIR$/Images/LearnToWrite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Images/Fruits/Lemon.png" afterPath="$PROJECT_DIR$/Images/Fruits/Lemon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Images/Vegetables/Lettuce.png" afterPath="$PROJECT_DIR$/Images/Vegetables/Lettuce.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Images/Vegetables/Onion.png" afterPath="$PROJECT_DIR$/Images/Vegetables/Onion.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Images/Fruits/Orange.png" afterPath="$PROJECT_DIR$/Images/Fruits/Orange.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Images/Fruits/Peach.png" afterPath="$PROJECT_DIR$/Images/Fruits/Peach.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Images/Fruits/Pear.png" afterPath="$PROJECT_DIR$/Images/Fruits/Pear.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Images/Fruits/Plum.png" afterPath="$PROJECT_DIR$/Images/Fruits/Plum.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Images/Vegetables/Potato.png" afterPath="$PROJECT_DIR$/Images/Vegetables/Potato.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Images/Vegetables/Radish.png" afterPath="$PROJECT_DIR$/Images/Vegetables/Radish.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Images/Vegetables/Spinach.png" afterPath="$PROJECT_DIR$/Images/Vegetables/Spinach.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Images/Vegetables/Tomato.png" afterPath="$PROJECT_DIR$/Images/Vegetables/Tomato.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Images/Vegetables.png" afterPath="$PROJECT_DIR$/Images/Vegetables.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Php/score.php" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\WrittingApp\Audio\Vegetables\Bunny.ogg" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\WrittingApp\Audio\Vegetables\Cat.ogg" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\WrittingApp\Audio\Vegetables\Cow.ogg" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\WrittingApp\Audio\Vegetables\Dog.ogg" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\WrittingApp\Audio\Vegetables\Duck.ogg" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\WrittingApp\Audio\Vegetables\Goat.ogg" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\WrittingApp\Audio\Vegetables\Hen.ogg" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\WrittingApp\Audio\Vegetables\Horse.ogg" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\WrittingApp\Audio\Vegetables\Lamb.ogg" afterPath="" />
+      <change type="DELETED" beforePath="D:\FACULTATE\WebStorm\WrittingApp\Audio\Vegetables\Sheep.ogg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/WrittingApp.iml" afterPath="$PROJECT_DIR$/.idea/WrittingApp.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Images/Vegetables/Pepper.png" afterPath="$PROJECT_DIR$/Images/Vegetables/Pepper.png" />
-      <change type="MOVED" beforePath="D:\FACULTATE\WebStorm\WrittingApp\bootbox.js" afterPath="$PROJECT_DIR$/Scripts/bootbox.js" />
-      <change type="MOVED" beforePath="D:\FACULTATE\WebStorm\WrittingApp\ocrad.js" afterPath="$PROJECT_DIR$/Scripts/ocrad.js" />
-      <change type="MOVED" beforePath="D:\FACULTATE\WebStorm\WrittingApp\style.css" afterPath="$PROJECT_DIR$/Style/style.css" />
-      <change type="MOVED" beforePath="D:\FACULTATE\WebStorm\WrittingApp\worker.js" afterPath="$PROJECT_DIR$/Scripts/worker.js" />
-      <change type="MOVED" beforePath="D:\FACULTATE\WebStorm\WrittingApp\writingApp.js" afterPath="$PROJECT_DIR$/Scripts/writingApp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/writingApp.js" afterPath="$PROJECT_DIR$/Scripts/writingApp.js" />
+      <change type="MOVED" beforePath="D:\FACULTATE\WebStorm\WrittingApp\Boostrap\css\bootstrap-theme.css" afterPath="$PROJECT_DIR$/Bootstrap/css/bootstrap-theme.css" />
+      <change type="MOVED" beforePath="D:\FACULTATE\WebStorm\WrittingApp\Boostrap\css\bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/Bootstrap/css/bootstrap-theme.min.css" />
+      <change type="MOVED" beforePath="D:\FACULTATE\WebStorm\WrittingApp\Boostrap\css\bootstrap.css" afterPath="$PROJECT_DIR$/Bootstrap/css/bootstrap.css" />
+      <change type="MOVED" beforePath="D:\FACULTATE\WebStorm\WrittingApp\Boostrap\css\bootstrap.min.css" afterPath="$PROJECT_DIR$/Bootstrap/css/bootstrap.min.css" />
+      <change type="MOVED" beforePath="D:\FACULTATE\WebStorm\WrittingApp\Boostrap\fonts\glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/Bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MOVED" beforePath="D:\FACULTATE\WebStorm\WrittingApp\Boostrap\fonts\glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/Bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MOVED" beforePath="D:\FACULTATE\WebStorm\WrittingApp\Boostrap\fonts\glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/Bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MOVED" beforePath="D:\FACULTATE\WebStorm\WrittingApp\Boostrap\fonts\glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/Bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MOVED" beforePath="D:\FACULTATE\WebStorm\WrittingApp\Boostrap\js\bootstrap.js" afterPath="$PROJECT_DIR$/Bootstrap/js/bootstrap.js" />
+      <change type="MOVED" beforePath="D:\FACULTATE\WebStorm\WrittingApp\Boostrap\js\bootstrap.min.js" afterPath="$PROJECT_DIR$/Bootstrap/js/bootstrap.min.js" />
+      <change type="MOVED" beforePath="D:\FACULTATE\WebStorm\WrittingApp\Boostrap\slate template\bootstrap.css" afterPath="$PROJECT_DIR$/Bootstrap/slate template/bootstrap.css" />
+      <change type="MOVED" beforePath="D:\FACULTATE\WebStorm\WrittingApp\Boostrap\slate template\bootstrap.min.css" afterPath="$PROJECT_DIR$/Bootstrap/slate template/bootstrap.min.css" />
     </list>
     <ignored path="ocrad.js-master.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -147,60 +61,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="writingApp.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="writingApp.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Scripts/writingApp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="215" column="30" selection-start="6499" selection-end="6499" vertical-scroll-proportion="-9.96" vertical-offset="3406" max-vertical-offset="6171">
+            <state line="197" column="9" selection-start="4803" selection-end="4803" vertical-scroll-proportion="5.2976" vertical-offset="38" max-vertical-offset="6273">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="buzz.min.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Scripts/buzz.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="311" selection-end="311" vertical-scroll-proportion="0.46633416" vertical-offset="0" max-vertical-offset="1139">
+            <state line="21" column="18" selection-start="587" selection-end="587" vertical-scroll-proportion="6.076923" vertical-offset="515" max-vertical-offset="1139">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="buzz.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Scripts/buzz.js">
+      <file leaf-file-name="ocrad.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Scripts/ocrad.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="28" selection-start="850" selection-end="850" vertical-scroll-proportion="0.0" vertical-offset="2856" max-vertical-offset="11951">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="toastr.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Style/toastr.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="182" column="1" selection-start="6989" selection-end="6989" vertical-scroll-proportion="0.0" vertical-offset="2031" max-vertical-offset="3196">
-              <folding>
-                <element signature="e#3003#3752#2" expanded="true" />
-                <element signature="e#3823#4612#2" expanded="true" />
-                <element signature="e#4685#5174#2" expanded="true" />
-                <element signature="e#5247#5964#2" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="worker.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Scripts/worker.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="1" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="137275">
               <folding />
             </state>
           </provider>
@@ -294,6 +176,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\FACULTATE\WebStorm\WrittingApp\Php" />
       <recent name="D:\FACULTATE\WebStorm\WrittingApp\Audio\Vegetables" />
       <recent name="D:\FACULTATE\WebStorm\WrittingApp" />
     </key>
@@ -402,14 +285,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32988167" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988167" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2751479" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1541411" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1541411" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -527,7 +410,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Boostrap/js/bootstrap.js">
+    <entry file="file://$PROJECT_DIR$/Bootstrap/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="2" selection-start="505" selection-end="505" vertical-scroll-proportion="-2.2753847" vertical-offset="1632" max-vertical-offset="34136" />
       </provider>
@@ -557,19 +440,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Style/toastr.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="182" column="1" selection-start="6989" selection-end="6989" vertical-scroll-proportion="0.0" vertical-offset="2664" max-vertical-offset="3196">
+        <state line="146" column="1" selection-start="6200" selection-end="6200" vertical-scroll-proportion="1.3485086" vertical-offset="1623" max-vertical-offset="3196">
           <folding>
-            <element signature="e#3003#3752#2" expanded="true" />
-            <element signature="e#3823#4612#2" expanded="true" />
-            <element signature="e#4685#5174#2" expanded="true" />
-            <element signature="e#5247#5964#2" expanded="true" />
+            <element signature="e#3003#3752#2" expanded="false" />
+            <element signature="e#3823#4612#2" expanded="false" />
+            <element signature="e#4685#5174#2" expanded="false" />
+            <element signature="e#5247#5964#2" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/buzz.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="28" selection-start="850" selection-end="850" vertical-scroll-proportion="0.0" vertical-offset="2856" max-vertical-offset="11951">
+        <state line="21" column="28" selection-start="850" selection-end="850" vertical-scroll-proportion="-3.8446155" vertical-offset="2856" max-vertical-offset="11951">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Php/score.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="2" selection-start="479" selection-end="479" vertical-scroll-proportion="0.47076923" vertical-offset="0" max-vertical-offset="650">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scripts/ocrad.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="137275">
           <folding />
         </state>
       </provider>
@@ -581,16 +478,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/writingApp.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="215" column="30" selection-start="6499" selection-end="6499" vertical-scroll-proportion="-9.96" vertical-offset="3406" max-vertical-offset="6171">
+        <state line="21" column="18" selection-start="587" selection-end="587" vertical-scroll-proportion="6.076923" vertical-offset="515" max-vertical-offset="1139">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/Scripts/writingApp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="311" selection-end="311" vertical-scroll-proportion="0.46633416" vertical-offset="0" max-vertical-offset="1139">
+        <state line="197" column="9" selection-start="4803" selection-end="4803" vertical-scroll-proportion="5.2976" vertical-offset="38" max-vertical-offset="6273">
           <folding />
         </state>
       </provider>

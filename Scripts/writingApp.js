@@ -5,30 +5,48 @@ var inputWord;
 var drag = false, lastX, lastY;
 var lastWorker;
 var worker;
+var score;
+
 window.onload=displayMenu();
 window.onresize=displayMenu();
+
 function startGame(Objtype)
 {
     //make other section invisible
     document.getElementById('menu').style.display='none';
     document.getElementById('game').style.display='block';
+    document.getElementById('image').innerHTML = "";
 
     c = document.getElementById('c');
     o = c.getContext('2d');
     c.width= document.getElementById('demo').offsetWidth;
     c.height= c.width/2.5;
+
+    score=0;
     initTouch();
     initMouse(c);
-    worker= new Worker('worker.js');
+    worker= new Worker('Scripts/worker.js');
     reset_canvas();
     initGameObjects(Objtype);
     getWord();
 }
 
-function reset_canvas(){
-    o.fillStyle = 'white'
-    o.fillRect(0, 0, c.width, c.height)
-    o.fillStyle = 'black'
+function displayMenu()
+{
+    document.getElementById('menu').style.display='block';
+    document.getElementById('game').style.display='none';
+    document.getElementById('image').innerHTML = "";
+
+    displayImg("Images/Dog.gif", "dog");
+    displayImg("Images/Animals.png", "animals");
+    displayImg("Images/Fruits.png", "fruits");
+    displayImg("Images/Vegetables.png", "vegetables");
+}
+
+function backToMenu()
+{
+    updateScore(score);
+    displayMenu();
 }
 
 function touchHandler(event) {
@@ -57,18 +75,18 @@ function touchHandler(event) {
     first.target.dispatchEvent(simulatedEvent);
     event.preventDefault();
 }
+function initMouse(c)
+{
+    c.onmousedown = MouseDown;
+    c.onmouseup   = MouseUp;
+    c.onmousemove = MouseMove;
+}
 
 function initTouch() {
     c.addEventListener('touchstart', touchHandler, true);
     c.addEventListener('touchmove', touchHandler, true);
     c.addEventListener('touchend', touchHandler, true);
     c.addEventListener('touchcancel', touchHandler, true);
-}
-function initMouse(c)
-{
-    c.onmousedown = MouseDown;
-    c.onmouseup   = MouseUp;
-    c.onmousemove = MouseMove;
 }
 
 function MouseDown(e)
@@ -113,10 +131,15 @@ function MouseMove(e){
         lastY = y;
     }
 }
+function GameObject(imagePath,name, sound)
+{
+    this.ImagePath=imagePath;
+    this.ObjectName=name;
+    this.Sound=sound;
 
+}
 function runOCR(image_data, raw_feed)
 {
-    //document.getElementById("output").className = 'processing'
     worker.onmessage = function(e)
     {
             inputWord= e.data.toString();
@@ -148,23 +171,39 @@ function getWord()
 
 }
 
-function GameObject(imagePath,name, sound)
-{
-    this.ImagePath=imagePath;
-    this.ObjectName=name;
-    this.Sound=sound;
+function verify()
+{   inputWord=inputWord.substring(0,inputWord.length-1).toUpperCase();
+    inputWord = inputWord.replace(/\s+/g, " ");
+    if(wordToWrite.localeCompare(inputWord)!=0)
 
-}
-
-function sound(name)
-{
-    return new buzz.sound("Audio/"+name,
+    {  bootbox.dialog({
+        message: inputWord.toString()+
+            "<div class='text-center'><br/><img src='Images/sad.gif~c200'/></div>",
+        title: "<b>You got it wrong</b>",
+        className:"text-center",
+        onEscape: function() {
+            reset_canvas();
+        },
+        buttons:
         {
-            formats: [ "ogg", "mp3", "wav" ],
-            preload: true,
-            autoplay: false,
-            loop: false
-        });
+            retry:
+            {
+                label: "&#8635;Retry ",
+                className: "btn btn-lg btn-info",
+                callback: function() {
+                    reset_canvas();
+                }
+
+            }
+        }
+    });
+    }
+    else
+    {
+        score+=20;
+        toast();
+        getWord();
+    }
 }
 
 function initGameObjects(objType)
@@ -241,6 +280,22 @@ function initGameObjects(objType)
 
 }
 
+function sound(name)
+{
+    return new buzz.sound("Audio/"+name,
+        {
+            formats: [ "ogg", "mp3", "wav" ],
+            preload: true,
+            autoplay: false,
+            loop: false
+        });
+}
+
+function reset_canvas(){
+    o.fillStyle = 'white'
+    o.fillRect(0, 0, c.width, c.height)
+    o.fillStyle = 'black'
+}
 
 function show_image(obj, divId) {
     var image1=new Image();
@@ -254,49 +309,6 @@ function show_image(obj, divId) {
         div.style.backgroundRepeat="no-repeat";
         div.style.backgroundPosition="center center";
     };
-}
-
-function center(objSize, relObj)
-{
-    var container=document.getElementById(relObj);
-    var height= container.offsetHeight;
-    return (height-objSize)/2;
-}
-
-function verify()
-{   inputWord=inputWord.substring(0,inputWord.length-1).toUpperCase();
-    inputWord = inputWord.replace(/\s+/g, " ");
-    if(wordToWrite.localeCompare(inputWord)!=0)
-
-    {  bootbox.dialog({
-            message: inputWord.toString()+
-                "<div class='text-center'><br/><img src='../Images/sad.gif~c200'/></div>",
-            title: "<b>You got it wrong</b>",
-            className:"text-center",
-            onEscape: function() {
-                reset_canvas();
-            },
-            buttons:
-            {
-                retry:
-                {
-                    label: "&#8635;Retry ",
-                    className: "btn btn-lg btn-info",
-                    callback: function() {
-                        reset_canvas();
-                    }
-
-                }
-            }
-        });
-      }
-        //alert(wordToWrite.toString()+"wrong"+inputWord.toString());
-
-    else
-    {
-        toast();
-        getWord();
-    }
 }
 
 function displayImg(src,elem)
@@ -319,22 +331,7 @@ function displayImg(src,elem)
             div.style.backgroundPosition = "center center";
     };
 }
-function displayMenu()
-{
-    document.getElementById('menu').style.display='block';
-    document.getElementById('game').style.display='none';
-    displayImg("Images/Dog.gif", "dog");
-    displayImg("Images/Animals.png", "animals");
-    displayImg("Images/Fruits.png", "fruits");
-    displayImg("Images/Vegetables.png", "vegetables");
-}
 
-function playSound(word)
-{
-    var audio = new Audio();
-    audio.src ='http://translate.google.com/translate_tts?tl=en&q='+word+'%20';
-    audio.play();
-}
 function toast()
 {
     toastr.options=
@@ -353,5 +350,14 @@ function toast()
         "hideMethod": "fadeOut"
     };
     toastr.info("+20 Points","GOOD!");
+}
 
+function updateScore(score)
+{
+    $.ajax({
+        type: "POST",
+        url: 'WrittingApp/php/score.php',
+        data: {score: score}
+
+    });
 }
