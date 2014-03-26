@@ -356,7 +356,7 @@ function updateScore(score)
 {
     $.ajax({
         type: "POST",
-        url: 'WrittingApp/php/score.php',
+        url: 'WritingApp/php/score.php',
         data: {score: score}
 
     });
